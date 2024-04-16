@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #f2d7cf;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section.login > div.imagem {
+    display: block;
+    background: #5f2c82 url(https://movinovacaonaeducacao.org.br/wp-content/uploads/2018/08/Ifpr-Campus-Jacarezinho.png) no-repeat;
+    background-size: auto 85%;;
+    background-position: center;
+    background-color: white;
+    height: 250px;
+}
+
+section.login > div.formulario {
+    display: block;
+    padding: 10px;
+}
+
+div.formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.formulario > p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    padding: 10px; /* Espaçamento entre os elementos dentro do card */
+}
+
+.botao, .input {
+    margin-bottom: 10px; /* Espaçamento entre botões e inputs */
+}
+
+.material-icons {
+    font-size: 16px;
+}
+
+.botao {
+    display: inline-block;
+    width: calc(48% - 1px); 
+    background-color: white;
+    color: rgb(58, 141, 237);
+    border: 1px solid #ccc;
+    padding:  12px;
+    margin-right: 2px; /* Espaçamento de 2px entre os botões */
+    border-radius: 7px;
+}
+
+.botao:hover {
+    background-color: rgb(137, 189, 249);
+    color: white;
+    border: 1px solid blue;
+}
+
+.input {
+    width: 100%; 
+    background-color: white; 
+}
+
+.input input[type="text"] {
+    width: 100%;
+    padding: 10px; 
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #333;
+}
+form > p{
+    font-size: 12px;
+    color: black;
+    position: center;
+    text-align: center;
+}
+form > h3{
+    font-size: 12px;
+    color: rgb(0, 136, 255);
+    position: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form > h3:hover{
+    cursor: pointer;
+}
+
+.bt_confirmar {
+    width: 100%; /* Tamanho igual ao card */
+    color: white; /* Cor da letra branca */
+    text-align: center; /* Alinhamento do texto no centro */
+}
+
+.bt_confirmar input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 0; /* Espaçamento interno */
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(31, 131, 237);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
