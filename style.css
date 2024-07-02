@@ -1,51 +1,49 @@
 @charset "UTF-8";
 
-* {
+* { /* define o estilo padrao de todos os elementos do arquivo*/
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* o tamanho agora levará em conta até a borda */
 }
 
-body, html {
+body, html { /* define a cor do corpo html e o tamanho que ira ocupar da tela */
     background-color: #f2d7cf;
     height: 100vh;
     width: 100vw;
 }
 
 
-main {
+main { /* Define a posição relativa e faz com que o elemento principal ocupe toda a tela */
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-section.login {
+section.login { /* Define a posicao absoluta, centraliza o elemento na tela e estiliza a seção de login */
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow: hidden;
+    overflow: hidden; /* nao deixa o tamanho de algum elemento passar o tamnho especificado*/
 
     background-color: white;
-    width: 350px;
+    width: 350px; /* tamnho do card*/
     height: 600px;
     border-radius: 15px;
-    transform: translate(-50%, -50%);
-    transition: width .3s, height .3s;
-    transition-timing-function: ease;
+    transform: translate(-50%, -50%); /* move um elemento horizontalmente e verticalmente de acordo com a porcentagem */
 }
 
 section.login > div.imagem {
     display: block;
-    background: #5f2c82 url(https://movinovacaonaeducacao.org.br/wp-content/uploads/2018/08/Ifpr-Campus-Jacarezinho.png) no-repeat;
-    background-size: auto 85%;;
-    background-position: center;
-    background-color: white;
-    height: 250px;
+    background: #5f2c82 url(https://movinovacaonaeducacao.org.br/wp-content/uploads/2018/08/Ifpr-Campus-Jacarezinho.png) no-repeat; /* colca uma imagem no cmapo imagem */
+    background-size: auto 85%; /* determina como uma imagem de fundo é dimensionada dentro do elemento api /// 85% do tamanho do elemento pai */
+    background-position: center; /* centraliza a imagem */
+    background-color: white; /* define o fundo da imagem em brnaco */
+    height: 250px; /* tamanha da imagem */
 }
 
 section.login > div.formulario {
-    display: block;
+    display: block; /*ocupa automaticamente toda a largura disponível de seu contêiner pai,*/
     padding: 10px;
 }
 
@@ -56,36 +54,36 @@ div.formulario > h1 {
 
 div.formulario > p {
     font-size: 0.9em;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* adiciona uma margem inferior de 10px */
 }
 
 .formulario {
-    padding: 10px; /* Espaçamento entre os elementos dentro do card */
+    padding: 10px; /* espacamento entre os elementos dentro do card */
 }
 
 .botao, .input {
-    margin-bottom: 10px; /* Espaçamento entre botões e inputs */
+    margin-bottom: 10px; /* espacamento entre botões e inputs */
 }
 
-.material-icons {
+.material-icons { /* tamanho dos icones */ 
     font-size: 16px;
 }
 
-.botao {
-    display: inline-block;
-    width: calc(48% - 1px); 
-    background-color: white;
-    color: rgb(58, 141, 237);
-    border: 1px solid #ccc;
+.botao { 
+    display: inline-block; /* não ocupa toda a largura disponível do contêiner pai. */
+    width: calc(48% - 1px); /* ocupa 48% da largura do container pai menos 1px*/
+    background-color: white; /* fundo branco*/
+    color: rgb(58, 141, 237); /* cor dos outros elementos azuis*/
+    border: 1px solid #ccc; /* borda de um px do tipo continua e com cor #ccc */
     padding:  12px;
-    margin-right: 2px; /* Espaçamento de 2px entre os botões */
-    border-radius: 7px;
+    margin-right: 2px; /* da espaco de 2px no lado direito do botao*/
+    border-radius: 7px; /* bordas com 7px*/
 }
 
 .botao:hover {
     background-color: rgb(137, 189, 249);
     color: white;
-    border: 1px solid blue;
+    border: 1px solid blue; /* borda com 1px de tamanho, linha continua e cm cor azul  */
 }
 
 .input {
@@ -97,11 +95,11 @@ div.formulario > p {
     width: 100%;
     padding: 10px; 
     color: #ccc;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* borda de um px do tipo continua e com cor #ccc */
     border-radius: 10px;
     color: #333;
 }
-form > p{
+form > p{ /* estiliza o paragrafo do form, tamanho 12px, alinhado no centro,..*/
     font-size: 12px;
     color: black;
     position: center;
@@ -111,11 +109,12 @@ form > h3{
     font-size: 12px;
     color: rgb(0, 136, 255);
     position: center;
-    text-align: center;
+    text-align: center; /* alinha os itens do h3 ao centro */ 
     margin-bottom: 10px;
 }
 form > h3:hover{
-    cursor: pointer;
+    /* quando passar o mouse por cima, o ponteiro do mouse fica do tipo pointer */
+    cursor: pointer; 
 }
 
 .bt_confirmar {
@@ -125,13 +124,13 @@ form > h3:hover{
 }
 
 .bt_confirmar input[type="submit"] {
-    display: block;
+    display: block; /*ocupa automaticamente toda a largura disponível de seu contêiner pai,*/
     width: 100%;
     padding: 10px 0; /* Espaçamento interno */
-    border: none;
+    border: none; /* nao contera borda*/
     border-radius: 10px;
     background-color: rgb(31, 131, 237);
     cursor: pointer;
-    color: white;
-    font-size: 16px;
+    color: white; /* cor dos elementos de dentro sera branco*/
+    font-size: 16px; /* tamanho da fonte*/
 }
